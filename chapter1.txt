@@ -1,0 +1,182 @@
+(aAccelerated Programmer Training (APT) Competencies
+1.	Encapsulation - Demonstrate the ability to make effective use of object-oriented encapsulation. 
+2.	Inheritance - Demonstrate the ability to make effective use of object-oriented inheritance. 
+3.	Polymorphism and Collections - Demonstrate the ability to make effective use of object-oriented polymorphism and 
+the Java Collections Framework.
+4.	 Abstraction- Abstract Classes and methods. Data abstraction is the process of hiding certain details and showing only essential information to the user.
+
+1. Polymorphism and inheritance in Java 
+-Polymorphism--or the ability of an object to execute specialized actions based on its type--is what makes Java code flexible
+Polymorphism in Java= Meaning  many forms of a methods.
+
+Code Example1 @ Eclipse:
+File Name: Polymorphism.java 			
+class Bird {
+	public void sing() {
+		System.out.println("tweet tweet tweet");
+	}
+}
+public class Polymorphism {
+
+	public static void main(String[] args) {
+		Bird b = new Bird();
+		b.sing();
+	}
+}
+Print Result:  tweet tweet tweet
+
+Example 2.
+
+class Bird {
+	public void sing() {
+		System.out.println("tweet tweet tweet");
+	}
+}
+class Robin extends Bird{
+	public void sing() {
+		System.out.println("twidledeedee");
+	}
+	}
+public class Polymorphism {
+public static void main(String[] args) {
+		Robin b = new Robin();
+		b.sing();
+	}
+}
+ Run Result:  “twidledeedee”
+
+Example 3
+
+class Bird {
+	public void sing() {
+		System.out.println("tweet tweet tweet");
+	}
+}
+class Robin extends Bird{
+	public void sing(String song) {
+		System.out.println("twidledeedee");
+	}
+	}
+Class Pelican extends Bird{
+	Public void sing(){
+	           System.out.println(“kwaak kwaak kwaak”);
+{
+{
+public class Polymorphism {
+
+	public static void main(String[] args) {
+		Robin b = new Robin();
+		b.sing();
+	}
+}
+Run Result: tweet tweet tweet
+
+
+
+
+
+
+
+
+Encapsulation:
+- is defined as the wrapping up of data under a single unit. Encapsulation can be achieved by: Declaring all the variables in the class as private and writing public methods in the class to set and get the values of variables. 
+Example 1
+File Name: Student.java
+public class Student {
+	private String name;
+	private int age;
+	
+	public void setName(String newName) {
+			name = newName;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setAge(int newAge) {
+		age = newAge;
+	}
+	public int getAge() {
+		return age;
+	}
+}
+File Name: Main.java
+public class Main {
+	public static void main(String[] args) {	
+		Student s = new Student();
+		s.setName("Suzie");
+		s.setAge(24);
+		
+		System.out.println(s.getName());
+		System.out.println(s.getAge());
+}
+}
+Note: 2 File name in one (1) code.
+
+Object oriented Programming
+is a computer programming model that organizes software design around data, or objects, rather than functions and logic. 
+An object can be defined as a data field that has unique attributes and behavior.
+
+Pen.java
+public class Pen{
+String type=”panda”;
+String color=”red”;
+int point=10;
+
+static Boolean clicked=false;
+public static void click(){
+             clicked=true;
+public static void unclick(){
+        click=false;
+}
+Main.java
+public class Main{
+public static void main(String[] args){
+
+Pen p=new Pen();
+System.out.println(p.type);
+System.out.println(p.color);\
+System.out.println(p.point);
+
+System.out.println(p.clicked);
+        p.clicked();
+System.out.println(p.clicked);
+}
+}
+
+
+
+
+
+
+Abstraction: Abstract Classes and Methods. Data abstraction is the process of hiding certain details and 
+showing only essential information to the user.
+
+File Name: Abstract.java
+ Abstract class Dog{
+String breed;
+Public void bark(){
+    System.out.println(“Bark!”);
+}
+Public abstract void poop();
+}
+Class Chihuahua extends Dog{
+   public void poop(){
+   System.out.println(“Dog pooped!”);
+}
+}
+Public class Abstract{
+   public static void main(String[] args){
+   Chihuahua c=new chihuahua();
+   c.bark();
+   c.poop();
+}
+}
+
+
+
+
+
+
+
+
+
